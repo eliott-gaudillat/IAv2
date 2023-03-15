@@ -24,17 +24,17 @@ class Etape3 :
         # #    tests sur Etape 3
         # #    ///////////////////
         # #    cas 1 : 10 villes de 0 à 9
-        tg : GrapheDeLieux = GrapheDeLieux.loadGraph("../../Data/town10.txt",True)
-        tsp : UneSolution = UneSolution(tg)
-        print("======== Solver 1 pour 10 villes de 0 a 9 : \n")
-        #    appel du solver 1
-        SolverHC.hilClimbing2(tsp,100)
-        print("======== Solver 2 pour 10 villes de 0 a 9 : \n")
-        #    appel du solver 2
-        SolverTabou.tabou(tsp,100)
+        # tg : GrapheDeLieux = GrapheDeLieux.loadGraph("../../Data/town10.txt",True)
+        # tsp : UneSolution = UneSolution(tg)
+        # print("======== Solver 1 pour 10 villes de 0 a 9 : \n")
+        # #    appel du solver 1
+        # SolverHC.hilClimbing2(tsp,100)
+        # print("======== Solver 2 pour 10 villes de 0 a 9 : \n")
+        # #    appel du solver 2
+        # SolverTabou.tabou(tsp,100)
         # #
         # #    ///////////////////
-        # #    cas 2 : 26 villes de 0 à 25
+        #    cas 2 : 26 villes de 0 à 25
         # tg = GrapheDeLieux.loadGraph("../../Data/town30.txt",True)
         # tsp = UneSolution(tg)
         # print("======== Solver 1 pour 26 villes de 0 a 25 : \n")
@@ -47,14 +47,14 @@ class Etape3 :
         # #
         # #    ///////////////////
         #    cas 3 : 150 villes
-        # tg = GrapheDeLieux.loadGraph("../../Data/town150.txt",True)
-        # tsp = UneSolution(tg)
-        # print("======== Solver 1 pour 150 villes : \n")
-        # #    appel du solver 1
-        # SolverHC.hilClimbing2(tsp,5)
-        # print("======== Solver 2 pour 150 villes : \n")
-        # #    appel du solver 2
-        # SolverTabou.tabou(tsp, 5)
+        tg = GrapheDeLieux.loadGraph("../../Data/town150.txt",True)
+        tsp = UneSolution(tg)
+        print("======== Solver 1 pour 150 villes : \n")
+        #    appel du solver 1
+        SolverHC.hilClimbing2(tsp,5)
+        print("======== Solver 2 pour 150 villes : \n")
+        #    appel du solver 2
+        SolverTabou.tabou(tsp, 5)
         #
         #
         # #    ///////////////////
